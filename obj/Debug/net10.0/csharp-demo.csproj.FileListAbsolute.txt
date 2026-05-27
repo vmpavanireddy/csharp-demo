@@ -1,0 +1,14 @@
+/Users/vmpavanireddy/Documents/csharp-demo/bin/Debug/net10.0/csharp-demo
+/Users/vmpavanireddy/Documents/csharp-demo/bin/Debug/net10.0/csharp-demo.deps.json
+/Users/vmpavanireddy/Documents/csharp-demo/bin/Debug/net10.0/csharp-demo.runtimeconfig.json
+/Users/vmpavanireddy/Documents/csharp-demo/bin/Debug/net10.0/csharp-demo.dll
+/Users/vmpavanireddy/Documents/csharp-demo/bin/Debug/net10.0/csharp-demo.pdb
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.AssemblyInfoInputs.cache
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.AssemblyInfo.cs
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.csproj.CoreCompileInputs.cache
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.dll
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/refint/csharp-demo.dll
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.pdb
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.genruntimeconfig.cache
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/ref/csharp-demo.dll
