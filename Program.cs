@@ -105,3 +105,13 @@ This is a multi-line comment. It can span multiple lines and is enclosed between
 /// <summary>
 /// This is an XML documentation comment. It provides a summary of the program or a specific code element.
 /// </summary>
+//declaring variables and constants in C#
+//Syntax: dataType variableName = value;
+int UserAge = 25; 
+string User = "pavani"; 
+Console.WriteLine("User Name: " + User +", Age: " + UserAge);
+//Declaring a constant: A constant is a named storage location that holds a value that cannot be changed after it is assigned.
+//Syntax: const dataType constantName = value;
+const double Pii = 3.14; 
+//Pii=2.14159; // This will cause an error because Pii is a constant and cannot be changed
+Console.WriteLine("The value of Pi is: " + Pii);
