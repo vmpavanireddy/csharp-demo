@@ -84,3 +84,14 @@ Console.ReadKey();
 3. Variables: Camel Case (e.g., myVariable, userName).
 4. Constants: All uppercase letters with underscores separating words (e.g., MAX_VALUE, PI).
 */
+//example of console and their types of syntax
+//Console.WriteLine() - used to display output to the console window. It can take multiple arguments and concatenate them together using the + operator. It also automatically adds a new line after the output.
+Console.WriteLine("Hello, User!"); 
+Console.WriteLine("The sum of 5 and 10 is: " + (5 + 10));
+//Console.ReadLine() - used to read user input from the console window. It waits for the user to enter a line of text and returns it as a string.
+Console.WriteLine("Enter your name:");
+string UserName = Console.ReadLine() !; // Reads user input and stores it in the variable 'UserName'
+Console.WriteLine("Hello, " + UserName); 
+//Console.ReadKey() - used to wait for the user to press a key before closing the console window. It is often used at the end of a program to keep the console window open  until the user is ready to close it.
+Console.WriteLine("Press any key to exit...");
+Console.ReadKey(); // Waits for the user to press a key before closing the console window

@@ -12,3 +12,4 @@
 /Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.pdb
 /Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.genruntimeconfig.cache
 /Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/ref/csharp-demo.dll
+/Users/vmpavanireddy/Documents/csharp-demo/obj/Debug/net10.0/csharp-demo.sourcelink.json
