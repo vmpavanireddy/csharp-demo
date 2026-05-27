@@ -115,3 +115,14 @@ Console.WriteLine("User Name: " + User +", Age: " + UserAge);
 const double Pii = 3.14; 
 //Pii=2.14159; // This will cause an error because Pii is a constant and cannot be changed
 Console.WriteLine("The value of Pi is: " + Pii);
+//calculations with variables
+int num1 = 10;
+int num2 = 5;
+int sum = num1 + num2; // Addition
+int difference = num1 - num2; // Subtraction
+int product = num1 * num2; // Multiplication
+double quotient = (double)num1 / num2; // Division (casting to double for accurate result)
+Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient);
