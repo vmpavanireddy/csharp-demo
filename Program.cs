@@ -10,6 +10,13 @@ namespace helloworld{  //Namespace name
 	}
 }
 */
+/*
+History of c-sharp
+Developed by Microsoft
+first version was released in year 2002. The latest version, C# 13, was released in November 2024.
+Part of .NET Framework
+Designed to be a modern object oriented programming language that could compete with java
+*/
 Console.WriteLine("Hello, World!");
 Console.WriteLine(3 + 7);
 Console.ReadKey();
