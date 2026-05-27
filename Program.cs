@@ -1,4 +1,16 @@
-﻿Console.WriteLine("Hello, World!");
+﻿/*
+C#
+syntax
+using System;   //refernce of .Net Framework Namespaces
+namespace helloworld{  //Namespace name
+	class program{    //class name
+		static void main(String[]args){. ////method
+			Console.WriteLine(“hello world”);    //method to display value on console
+		}
+	}
+}
+*/
+Console.WriteLine("Hello, World!");
 Console.WriteLine(3 + 7);
 Console.ReadKey();
 //Single-line Comments
