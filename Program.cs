@@ -126,3 +126,20 @@ Console.WriteLine("Sum: " + sum);
 Console.WriteLine("Difference: " + difference);
 Console.WriteLine("Product: " + product);
 Console.WriteLine("Quotient: " + quotient);
+//data types in C#
+string greeting = "Hello, World!"; // string data type for text
+int age = 30; // int data type for whole numbers
+double pi = 3.14159; // double data type for decimal numbers
+char grade = 'A'; // char data type for a single character
+bool isStudent = true; // bool data type for boolean values (true or false)
+long largeNumber = 1234567890L; // long data type for large whole numbers
+float smallDecimal = 3.14f; // float data type for single-precision floating-point numbers
+byte smallNumber = 255; // byte data type for small whole numbers (0 to 255)
+Console.WriteLine("Greeting: " + greeting);
+Console.WriteLine("Age: " + age);
+Console.WriteLine("Pi: " + pi);
+Console.WriteLine("Grade: " + grade);
+Console.WriteLine("Is Student: " + isStudent);
+Console.WriteLine("Large Number: " + largeNumber);
+Console.WriteLine("Small Decimal: " + smallDecimal);
+Console.WriteLine("Small Number: " + smallNumber);
