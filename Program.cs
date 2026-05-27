@@ -17,6 +17,28 @@ first version was released in year 2002. The latest version, C# 13, was release
 Part of .NET Framework
 Designed to be a modern object oriented programming language that could compete with java
 */
+/*
+Fearures and capabilities
+Object oriented
+Type safety
+Productivity tools
+C-# in enterprise software development
+Backend services
+Business applications
+Data visualisation
+Rapid prototyping
+
+C-# in game development
+Unity
+Unreal engine
+Monogame
+Gad engine
+C-#in web development\
+ASP.NET
+Blazor
+signalR
+Web API
+*/
 Console.WriteLine("Hello, World!");
 Console.WriteLine(3 + 7);
 Console.ReadKey();
