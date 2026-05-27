@@ -95,3 +95,13 @@ Console.WriteLine("Hello, " + UserName);
 //Console.ReadKey() - used to wait for the user to press a key before closing the console window. It is often used at the end of a program to keep the console window open  until the user is ready to close it.
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey(); // Waits for the user to press a key before closing the console window
+//types of comments in C#
+//Single-line comment: Used for brief explanations or notes on a single line of code.
+// This is a single-line comment
+/*Multi-line comment: Used for longer explanations or comments that span multiple lines.
+This is a multi-line comment. It can span multiple lines and is enclosed between /* and *\/ (without the backslash).
+*/
+//XML documentation comment: Used to provide structured documentation for classes, methods, properties, etc. It is enclosed between /// and is often used to generate documentation for code.
+/// <summary>
+/// This is an XML documentation comment. It provides a summary of the program or a specific code element.
+/// </summary>
