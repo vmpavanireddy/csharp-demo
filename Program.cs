@@ -380,3 +380,14 @@ Console.WriteLine("Does str contain 'World'? " + str.Contains("World"));
 Console.WriteLine("Replace 'World' with 'C#': " + str.Replace("World", "C#"));
 Console.WriteLine("Substring of str (starting at index 7, length 5): " + str.Substring(7, 5));
 Console.ReadKey();
+
+//concatenation of strings
+string fName = "pavani";
+string lName = "reddy";
+string fullName = string.Concat("VM ",fName, " ", lName); 
+Console.WriteLine("Full Name: " + fullName); 
+Console.ReadKey();
+//interpolation of strings
+string fullNameInterpolated = $"VM {fName} {lName}";
+Console.WriteLine("Full Name (Interpolated): " + fullNameInterpolated);
+Console.ReadKey();
