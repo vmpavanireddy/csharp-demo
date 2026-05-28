@@ -364,3 +364,19 @@ Console.WriteLine("Rounded value of numA: " + Math.Round(numA));
 Console.WriteLine("Minimum of numA and numB: " + Math.Min(numA, numB)); 
 Console.WriteLine("Maximum of numA and numB: " + Math.Max(numA, numB)); 
 Console.ReadKey();
+//string methods in C#
+//String.Length - returns the number of characters in a string
+//String.ToUpper() - converts a string to uppercase
+//String.ToLower() - converts a string to lowercase
+//String.Contains() - checks if a string contains a specified substring
+//String.Replace() - replaces occurrences of a specified substring with another substring
+//String.Substring() - returns a substring from a string based on specified starting index and length
+//examples of string methods
+string str = "Hello, World!";
+Console.WriteLine("Length of str: " + str.Length);	
+Console.WriteLine("Uppercase str: " + str.ToUpper());
+Console.WriteLine("Lowercase str: " + str.ToLower());
+Console.WriteLine("Does str contain 'World'? " + str.Contains("World"));
+Console.WriteLine("Replace 'World' with 'C#': " + str.Replace("World", "C#"));
+Console.WriteLine("Substring of str (starting at index 7, length 5): " + str.Substring(7, 5));
+Console.ReadKey();
