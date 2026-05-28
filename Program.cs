@@ -184,3 +184,18 @@ Console.WriteLine("Is Student: " + isStudent);
 Console.WriteLine("Large Number: " + largeNumber);
 Console.WriteLine("Small Decimal: " + smallDecimal);
 Console.WriteLine("Small Number: " + smallNumber);
+//value types and reference types in C#
+//Value types: store the actual data directly in memory. Examples include int, double, char
+//Reference types: store a reference to the data in memory. Examples include string, arrays, classes
+//Value type example
+int valueA = 10; // valueA holds the actual value 10
+int valueB = valueA; // valueB is assigned the value of valueA (10)
+valueB = 20; // changing valueB does not affect valueA
+Console.WriteLine("Value A: " + valueA); // 10
+Console.WriteLine("Value B: " + valueB); // 20
+//Reference type example
+string referenceA = "Hello"; // referenceA holds a reference to the string "Hello"
+string referenceB = referenceA; // referenceB is assigned the reference of referenceA (points to the same string "Hello")
+referenceB = "World"; // changing referenceB does not affect referenceA
+Console.WriteLine("Reference A: " + referenceA); //  Hello
+Console.WriteLine("Reference B: " + referenceB); //  World
