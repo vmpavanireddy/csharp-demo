@@ -347,3 +347,20 @@ Console.WriteLine("conditionA || conditionB: " + (conditionA || conditionB)); //
 Console.WriteLine("!conditionA: " + (!conditionA)); // Output: False
 Console.WriteLine("!conditionB: " + (!conditionB)); // Output: True
 Console.ReadKey();
+//math
+//Math.Abs() - returns the absolute value of a number
+//Math.Pow() - returns a number raised to the power of another number
+//Math.Sqrt() - returns the square root of a number
+//Math.Round() - rounds a number to the nearest integer or specified number of decimal places
+//Math.Min() - returns the smaller of two numbers
+//Math.Max() - returns the larger of two numbers
+//examples of math methods
+double numA = -5.5;
+double numB = 2.0;
+Console.WriteLine("Absolute value of numA: " + Math.Abs(numA)); 
+Console.WriteLine("numA raised to the power of numB: " + Math.Pow(numA, numB)); 
+Console.WriteLine("Square root of numB: " + Math.Sqrt(numB)); 
+Console.WriteLine("Rounded value of numA: " + Math.Round(numA));
+Console.WriteLine("Minimum of numA and numB: " + Math.Min(numA, numB)); 
+Console.WriteLine("Maximum of numA and numB: " + Math.Max(numA, numB)); 
+Console.ReadKey();
