@@ -240,3 +240,24 @@ Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
 Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
 
 Console.ReadKey();
+
+//using parsing methods to convert strings to other data types
+//C# provides parsing methods to convert strings to other data types. Some common parsing methods include:
+//int.Parse() - converts a string to an integer
+//double.Parse() - converts a string to a double
+//bool.Parse() - converts a string to a boolean
+//Example of parsing methods
+string intString = "42";
+string doubleString = "3.14";
+string boolString = "true";	
+
+int parsedInt = int.Parse(intString);
+double parsedDouble = double.Parse(doubleString);
+bool parsedBool = bool.Parse(boolString);
+
+Console.WriteLine("Parsed Int: " + parsedInt);
+Console.WriteLine("Parsed Double: " + parsedDouble);
+Console.WriteLine("Parsed Bool: " + parsedBool);
+
+Console.ReadKey();
+
