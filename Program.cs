@@ -199,3 +199,10 @@ string referenceB = referenceA; // referenceB is assigned the reference of refer
 referenceB = "World"; // changing referenceB does not affect referenceA
 Console.WriteLine("Reference A: " + referenceA); //  Hello
 Console.WriteLine("Reference B: " + referenceB); //  World
+
+Console.WriteLine($"{referenceA} {referenceB},welcome"); //  Hello World
+Console.ReadKey(); 
+//warning and error in c#
+//Warning: A warning is a message that indicates a potential issue in the code that may not prevent the program from running but could lead to unexpected behavior or bugs. 
+//error: An error is a message that indicates a problem in the code that prevents the program from compiling or running. 
+
