@@ -280,6 +280,8 @@ mynum = int.Parse(userInput);
 
 Console.WriteLine("You entered: " + mynum);
 //example calculator using user input and type conversion
+//airthmetic operations
+//addition, subtraction, multiplication, division
 string input1 = Console.ReadLine() !;
 string input2 = Console.ReadLine() !;
 Console.WriteLine("Enter the first number:");
@@ -299,4 +301,22 @@ Console.WriteLine("The sum of " + number_1 + " and " + number_2 + " is: " + sum_
 Console.WriteLine("The difference of " + number_1 + " and " + number_2 + " is: " + difference_ans);
 Console.WriteLine("The product of " + number_1 + " and " + number_2 + " is: " + product_ans);
 Console.WriteLine("The quotient of " + number_1 + " and " + number_2 + " is: " + quotient_ans);
+Console.ReadKey();
+//assignment operators in C#
+//=, +=, -=, *=, /=, %=
+int a1 = 10;
+a1 += 5; // equivalent to a1 = a1 + 5;
+Console.WriteLine("After += operator: " + a1); // Output: 15
+int a2 = 20;
+a2 -= 5; // equivalent to a2 = a2 - 5;
+Console.WriteLine("After -= operator: " + a2); // Output: 15
+int a3 = 5;
+a3 *= 2; // equivalent to a3 = a3 * 2;
+Console.WriteLine("After *= operator: " + a3); // Output: 10
+int a4 = 10;
+a4 /= 2; // equivalent to a4 = a4 / 2;
+Console.WriteLine("After /= operator: " + a4); // Output: 5
+int a5 = 10;
+a5 %= 3; // equivalent to a5 = a5 % 3;
+Console.WriteLine("After %= operator: " + a5); // Output: 1
 Console.ReadKey();
