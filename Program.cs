@@ -265,3 +265,17 @@ Console.ReadKey();
 Console.WriteLine("Enter your age:");
 int your_age = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Your age is: " + your_age);
+
+//parse is used to convert a string to a specific data type
+//difference between parse and convert
+//The main difference between parse and convert is that parse is a method that belongs to a specific data type (e.g., int.Parse(), double.Parse()), while convert is a class that provides static methods for converting between different data types (e.g., Convert.ToInt32(), Convert.ToDouble()).
+//for user input, we often need to parse the input string to the desired data type
+//we use type conversion - to ensure variables match the expected data type for calculations or other operations
+Console.WriteLine("Enter a number:");
+int mynum=0;
+mynum = int.Parse(Console.ReadLine());
+
+string userInput = Console.ReadLine() ;
+mynum = int.Parse(userInput);
+
+Console.WriteLine("You entered: " + mynum);
