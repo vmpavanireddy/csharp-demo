@@ -261,3 +261,7 @@ Console.WriteLine("Parsed Bool: " + parsedBool);
 
 Console.ReadKey();
 
+
+Console.WriteLine("Enter your age:");
+int your_age = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Your age is: " + your_age);
