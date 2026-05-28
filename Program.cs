@@ -338,3 +338,12 @@ Console.ReadKey();
 //x1 < y1: True
 //x1 >= y1: False
 //x1 <= y1: True	
+//logical operators in C#
+//&&, ||, !
+bool conditionA = true;
+bool conditionB = false;
+Console.WriteLine("conditionA && conditionB: " + (conditionA && conditionB)); // Output: False
+Console.WriteLine("conditionA || conditionB: " + (conditionA || conditionB)); // Output: True
+Console.WriteLine("!conditionA: " + (!conditionA)); // Output: False
+Console.WriteLine("!conditionB: " + (!conditionB)); // Output: True
+Console.ReadKey();
