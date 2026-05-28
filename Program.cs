@@ -320,3 +320,21 @@ int a5 = 10;
 a5 %= 3; // equivalent to a5 = a5 % 3;
 Console.WriteLine("After %= operator: " + a5); // Output: 1
 Console.ReadKey();
+//comparison operators in C#
+//==, !=, >, <, >=, <=
+int x1 = 10;
+int y1 = 20;
+Console.WriteLine("x1 == y1: " + (x1 == y1));
+Console.WriteLine("x1 != y1: " + (x1 != y1));
+Console.WriteLine("x1 > y1: " + (x1 > y1));
+Console.WriteLine("x1 < y1: " + (x1 < y1));
+Console.WriteLine("x1 >= y1: " + (x1 >= y1));
+Console.WriteLine("x1 <= y1: " + (x1 <= y1));
+Console.ReadKey();
+//output:
+//x1 == y1: False
+//x1 != y1: True
+//x1 > y1: False
+//x1 < y1: True
+//x1 >= y1: False
+//x1 <= y1: True	
