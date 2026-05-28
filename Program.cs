@@ -273,9 +273,30 @@ Console.WriteLine("Your age is: " + your_age);
 //we use type conversion - to ensure variables match the expected data type for calculations or other operations
 Console.WriteLine("Enter a number:");
 int mynum=0;
-mynum = int.Parse(Console.ReadLine());
+mynum = int.Parse(Console.ReadLine() !);
 
-string userInput = Console.ReadLine() ;
+string userInput = Console.ReadLine() !;
 mynum = int.Parse(userInput);
 
 Console.WriteLine("You entered: " + mynum);
+//example calculator using user input and type conversion
+string input1 = Console.ReadLine() !;
+string input2 = Console.ReadLine() !;
+Console.WriteLine("Enter the first number:");
+int number_1 = int.Parse(input1);
+Console.WriteLine("Enter the second number:");
+int number_2 = int.Parse(input2);
+//addition
+int sum_ans = number_1 + number_2;
+//subtraction
+int difference_ans = number_1 - number_2;
+//multiplication
+int product_ans = number_1 * number_2;
+//division
+int quotient_ans = number_1 / number_2;	
+
+Console.WriteLine("The sum of " + number_1 + " and " + number_2 + " is: " + sum_ans);
+Console.WriteLine("The difference of " + number_1 + " and " + number_2 + " is: " + difference_ans);
+Console.WriteLine("The product of " + number_1 + " and " + number_2 + " is: " + product_ans);
+Console.WriteLine("The quotient of " + number_1 + " and " + number_2 + " is: " + quotient_ans);
+Console.ReadKey();
