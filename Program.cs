@@ -206,3 +206,37 @@ Console.ReadKey();
 //Warning: A warning is a message that indicates a potential issue in the code that may not prevent the program from running but could lead to unexpected behavior or bugs. 
 //error: An error is a message that indicates a problem in the code that prevents the program from compiling or running. 
 
+//type casting in c#
+//Implicit Casting (automatically) - converting a smaller type to a larger type size
+//char -> int -> long -> float -> double
+//example of implicit casting
+int num_1 = 10; // int is a smaller type
+double num_2 = num_1; // implicit casting from int to double
+Console.WriteLine("Implicit Casting: " + num_2); // Output: 10.0
+//Explicit Casting (manually) - converting a larger type to a smaller size type
+//double -> float -> long -> int -> char
+//example of explicit casting
+double num_3 = 3.14; // double is a larger type
+int num_4 = (int)num_3; // explicit casting from double to int
+Console.WriteLine("Explicit Casting: " + num_4); // Output: 3 (the decimal part is truncated)
+//what if we try to cast a larger type to a smaller type without explicit casting?
+//double num_5 = 3.14; // double is a larger type
+//int num_6 = num_5; // This will cause a compile-time error because it is trying to assign a double value to an int variable without explicit casting
+//Console.WriteLine("Without Explicit Casting: " + num_6); // This line will not compile due to the error in the previous line
+//Type Conversion Methods
+//C# provides built-in methods for converting between different data types. Some common type conversion methods include:
+//Convert.ToInt32() - converts a value to an integer
+//Convert.ToDouble() - converts a value to a double
+//Convert.ToString() - converts a value to a string
+//Convert.ToBoolean() - converts a value to a boolean
+//Example of type conversion methods
+int myInt = 10;
+double myDouble = 5.25;
+bool myBool = true;
+
+Console.WriteLine(Convert.ToString(myInt));    // convert int to string
+Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
+Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
+Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
+
+Console.ReadKey();
