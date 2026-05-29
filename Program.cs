@@ -414,3 +414,12 @@ Console.ReadKey();
 string specialString = "Hello,\nWorld!\tThis is a string with special characters:\n- New Line\n- Tab\n- Backslash: \\\n- Double Quote: \"\n- Single Quote: \'";
 Console.WriteLine(specialString);
 Console.ReadKey();
+//booleans
+bool studying = true;
+bool gaming = false;
+Console.WriteLine("Is studying? " + studying);
+Console.WriteLine("Is gaming? " + gaming);
+Console.ReadKey();
+int myAge = 21;
+int votingAge = 18;
+Console.WriteLine(myAge >= votingAge);
