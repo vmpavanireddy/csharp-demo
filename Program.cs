@@ -423,3 +423,66 @@ Console.ReadKey();
 int myAge = 21;
 int votingAge = 18;
 Console.WriteLine(myAge >= votingAge);
+//if statement else statement
+if (myAge >= votingAge) 
+{
+  Console.WriteLine("Old enough to vote!");
+} 
+Console.ReadKey();
+//syntax of if statement
+/*if (condition) 
+{
+  // block of code to be executed if the condition is True
+}
+*/
+if (myAge >= votingAge) 
+{
+  Console.WriteLine("Old enough to vote!");
+} 
+else 
+{
+  Console.WriteLine("Not old enough to vote.");
+}
+//if else statement syntax
+/*if (condition) 
+{
+  // block of code to be executed if the condition is True
+}
+else 
+{	
+  // block of code to be executed if the condition is False
+}
+*/
+Console.ReadKey();
+if(myAge >= votingAge) 
+{
+  Console.WriteLine("Old enough to vote!");
+} 
+else if (myAge >= 16) 
+{
+  Console.WriteLine("Old enough to drive, but not old enough to vote.");
+} 
+else 
+{
+  Console.WriteLine("Not old enough to vote or drive.");
+}
+Console.ReadKey();
+//if else if statement syntax
+/*if (condition1) 
+{
+  // block of code to be executed if condition1 is True	
+}
+else if (condition2) 
+{
+  // block of code to be executed if condition2 is True
+}
+else 
+{
+  // block of code to be executed if both condition1 and condition2 are False
+}
+*/
+//Short Hand If...Else
+//syntax: variable = condition ? expressionIfTrue : expressionIfFalse;
+string result = (myAge >= votingAge) ? "Old enough to vote!" : "Not old enough to vote.";
+Console.WriteLine(result);
+Console.ReadKey();
