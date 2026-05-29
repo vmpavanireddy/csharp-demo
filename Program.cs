@@ -59,7 +59,7 @@ myNum = 15;
 Console.WriteLine(myNum + 5);
 //if you assign a new value to an existing variable, it will overwrite the previous value:
 int Num = 15;
-Num = 20; 
+Num = 20;
 Console.WriteLine(Num);
 //constants-unchangeable and read-only-don't want others (or yourself) to overwrite existing values
 const double Pi = 3.14;
@@ -75,7 +75,7 @@ Console.WriteLine("Full Name: " + fullName);
 int a = 5;
 int b = 6;
 Console.WriteLine(a + b); // Print the value of a + b
-//Multiple Variables
+						  //Multiple Variables
 int x, y, z;
 x = y = z = 50;
 //int x = 5, y = 6, z = 50;
@@ -108,7 +108,7 @@ double -> float -> long -> int -> char
 //Console.ReadLine() method is used to get user input from the console window. It reads a line of text and returns it as a string.
 Console.WriteLine("Enter your name:");
 //variable to store user input
-string userName = Console.ReadLine() !; //The ! operator is used to indicate that the value returned by Console.ReadLine() will not be null. This is a way to tell the compiler that you are sure that the user will enter a value and that it will not be null, which can help prevent potential null reference exceptions in your code.
+string userName = Console.ReadLine()!; //The ! operator is used to indicate that the value returned by Console.ReadLine() will not be null. This is a way to tell the compiler that you are sure that the user will enter a value and that it will not be null, which can help prevent potential null reference exceptions in your code.
 Console.WriteLine("Hello, " + userName);
 Console.ReadKey();
 //readkey() method is used to wait for the user to press a key before closing the console window. It is often used at the end of a program to keep the console window open until the user is ready to close it.
@@ -127,18 +127,18 @@ Console.ReadKey();
 */
 //example of console and their types of syntax
 //Console.WriteLine() - used to display output to the console window. It can take multiple arguments and concatenate them together using the + operator. It also automatically adds a new line after the output.
-Console.WriteLine("Hello, User!"); 
+Console.WriteLine("Hello, User!");
 Console.WriteLine("The sum of 5 and 10 is: " + (5 + 10));
 //Console.ReadLine() - used to read user input from the console window. It waits for the user to enter a line of text and returns it as a string.
 Console.WriteLine("Enter your name:");
-string UserName = Console.ReadLine() !; // Reads user input and stores it in the variable 'UserName'
-Console.WriteLine("Hello, " + UserName); 
+string UserName = Console.ReadLine()!; // Reads user input and stores it in the variable 'UserName'
+Console.WriteLine("Hello, " + UserName);
 //Console.ReadKey() - used to wait for the user to press a key before closing the console window. It is often used at the end of a program to keep the console window open  until the user is ready to close it.
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey(); // Waits for the user to press a key before closing the console window
-//types of comments in C#
-//Single-line comment: Used for brief explanations or notes on a single line of code.
-// This is a single-line comment
+				   //types of comments in C#
+				   //Single-line comment: Used for brief explanations or notes on a single line of code.
+				   // This is a single-line comment
 /*Multi-line comment: Used for longer explanations or comments that span multiple lines.
 This is a multi-line comment. It can span multiple lines and is enclosed between /* and *\/ (without the backslash).
 */
@@ -148,12 +148,12 @@ This is a multi-line comment. It can span multiple lines and is enclosed between
 /// </summary>
 //declaring variables and constants in C#
 //Syntax: dataType variableName = value;
-int UserAge = 25; 
-string User = "pavani"; 
-Console.WriteLine("User Name: " + User +", Age: " + UserAge);
+int UserAge = 25;
+string User = "pavani";
+Console.WriteLine("User Name: " + User + ", Age: " + UserAge);
 //Declaring a constant: A constant is a named storage location that holds a value that cannot be changed after it is assigned.
 //Syntax: const dataType constantName = value;
-const double Pii = 3.14; 
+const double Pii = 3.14;
 //Pii=2.14159; // This will cause an error because Pii is a constant and cannot be changed
 Console.WriteLine("The value of Pi is: " + Pii);
 //calculations with variables
@@ -193,7 +193,7 @@ int valueB = valueA; // valueB is assigned the value of valueA (10)
 valueB = 20; // changing valueB does not affect valueA
 Console.WriteLine("Value A: " + valueA); // 10
 Console.WriteLine("Value B: " + valueB); // 20
-//Reference type example
+										 //Reference type example
 string referenceA = "Hello"; // referenceA holds a reference to the string "Hello"
 string referenceB = referenceA; // referenceB is assigned the reference of referenceA (points to the same string "Hello")
 referenceB = "World"; // changing referenceB does not affect referenceA
@@ -201,7 +201,7 @@ Console.WriteLine("Reference A: " + referenceA); //  Hello
 Console.WriteLine("Reference B: " + referenceB); //  World
 
 Console.WriteLine($"{referenceA} {referenceB},welcome"); //  Hello World
-Console.ReadKey(); 
+Console.ReadKey();
 //warning and error in c#
 //Warning: A warning is a message that indicates a potential issue in the code that may not prevent the program from running but could lead to unexpected behavior or bugs. 
 //error: An error is a message that indicates a problem in the code that prevents the program from compiling or running. 
@@ -213,23 +213,23 @@ Console.ReadKey();
 int num_1 = 10; // int is a smaller type
 double num_2 = num_1; // implicit casting from int to double
 Console.WriteLine("Implicit Casting: " + num_2); // Output: 10.0
-//Explicit Casting (manually) - converting a larger type to a smaller size type
-//double -> float -> long -> int -> char
-//example of explicit casting
+												 //Explicit Casting (manually) - converting a larger type to a smaller size type
+												 //double -> float -> long -> int -> char
+												 //example of explicit casting
 double num_3 = 3.14; // double is a larger type
 int num_4 = (int)num_3; // explicit casting from double to int
 Console.WriteLine("Explicit Casting: " + num_4); // Output: 3 (the decimal part is truncated)
-//what if we try to cast a larger type to a smaller type without explicit casting?
-//double num_5 = 3.14; // double is a larger type
-//int num_6 = num_5; // This will cause a compile-time error because it is trying to assign a double value to an int variable without explicit casting
-//Console.WriteLine("Without Explicit Casting: " + num_6); // This line will not compile due to the error in the previous line
-//Type Conversion Methods
-//C# provides built-in methods for converting between different data types. Some common type conversion methods include:
-//Convert.ToInt32() - converts a value to an integer
-//Convert.ToDouble() - converts a value to a double
-//Convert.ToString() - converts a value to a string
-//Convert.ToBoolean() - converts a value to a boolean
-//Example of type conversion methods
+												 //what if we try to cast a larger type to a smaller type without explicit casting?
+												 //double num_5 = 3.14; // double is a larger type
+												 //int num_6 = num_5; // This will cause a compile-time error because it is trying to assign a double value to an int variable without explicit casting
+												 //Console.WriteLine("Without Explicit Casting: " + num_6); // This line will not compile due to the error in the previous line
+												 //Type Conversion Methods
+												 //C# provides built-in methods for converting between different data types. Some common type conversion methods include:
+												 //Convert.ToInt32() - converts a value to an integer
+												 //Convert.ToDouble() - converts a value to a double
+												 //Convert.ToString() - converts a value to a string
+												 //Convert.ToBoolean() - converts a value to a boolean
+												 //Example of type conversion methods
 int myInt = 10;
 double myDouble = 5.25;
 bool myBool = true;
@@ -249,7 +249,7 @@ Console.ReadKey();
 //Example of parsing methods
 string intString = "42";
 string doubleString = "3.14";
-string boolString = "true";	
+string boolString = "true";
 
 int parsedInt = int.Parse(intString);
 double parsedDouble = double.Parse(doubleString);
@@ -272,18 +272,18 @@ Console.WriteLine("Your age is: " + your_age);
 //for user input, we often need to parse the input string to the desired data type
 //we use type conversion - to ensure variables match the expected data type for calculations or other operations
 Console.WriteLine("Enter a number:");
-int mynum=0;
-mynum = int.Parse(Console.ReadLine() !);
+int mynum = 0;
+mynum = int.Parse(Console.ReadLine()!);
 
-string userInput = Console.ReadLine() !;
+string userInput = Console.ReadLine()!;
 mynum = int.Parse(userInput);
 
 Console.WriteLine("You entered: " + mynum);
 //example calculator using user input and type conversion
 //airthmetic operations
 //addition, subtraction, multiplication, division
-string input1 = Console.ReadLine() !;
-string input2 = Console.ReadLine() !;
+string input1 = Console.ReadLine()!;
+string input2 = Console.ReadLine()!;
 Console.WriteLine("Enter the first number:");
 int number_1 = int.Parse(input1);
 Console.WriteLine("Enter the second number:");
@@ -295,7 +295,7 @@ int difference_ans = number_1 - number_2;
 //multiplication
 int product_ans = number_1 * number_2;
 //division
-int quotient_ans = number_1 / number_2;	
+int quotient_ans = number_1 / number_2;
 
 Console.WriteLine("The sum of " + number_1 + " and " + number_2 + " is: " + sum_ans);
 Console.WriteLine("The difference of " + number_1 + " and " + number_2 + " is: " + difference_ans);
@@ -357,12 +357,12 @@ Console.ReadKey();
 //examples of math methods
 double numA = -5.5;
 double numB = 2.0;
-Console.WriteLine("Absolute value of numA: " + Math.Abs(numA)); 
-Console.WriteLine("numA raised to the power of numB: " + Math.Pow(numA, numB)); 
-Console.WriteLine("Square root of numB: " + Math.Sqrt(numB)); 
+Console.WriteLine("Absolute value of numA: " + Math.Abs(numA));
+Console.WriteLine("numA raised to the power of numB: " + Math.Pow(numA, numB));
+Console.WriteLine("Square root of numB: " + Math.Sqrt(numB));
 Console.WriteLine("Rounded value of numA: " + Math.Round(numA));
-Console.WriteLine("Minimum of numA and numB: " + Math.Min(numA, numB)); 
-Console.WriteLine("Maximum of numA and numB: " + Math.Max(numA, numB)); 
+Console.WriteLine("Minimum of numA and numB: " + Math.Min(numA, numB));
+Console.WriteLine("Maximum of numA and numB: " + Math.Max(numA, numB));
 Console.ReadKey();
 //string methods in C#
 //String.Length - returns the number of characters in a string
@@ -373,7 +373,7 @@ Console.ReadKey();
 //String.Substring() - returns a substring from a string based on specified starting index and length
 //examples of string methods
 string str = "Hello, World!";
-Console.WriteLine("Length of str: " + str.Length);	
+Console.WriteLine("Length of str: " + str.Length);
 Console.WriteLine("Uppercase str: " + str.ToUpper());
 Console.WriteLine("Lowercase str: " + str.ToLower());
 Console.WriteLine("Does str contain 'World'? " + str.Contains("World"));
@@ -384,8 +384,8 @@ Console.ReadKey();
 //concatenation of strings
 string fName = "pavani";
 string lName = "reddy";
-string full_Name = string.Concat("VM ",fName, " ", lName); 
-Console.WriteLine("Full Name: " + full_Name); 
+string full_Name = string.Concat("VM ", fName, " ", lName);
+Console.WriteLine("Full Name: " + full_Name);
 Console.ReadKey();
 //interpolation of strings
 string fullNameInterpolated = $"VM {fName} {lName}";
@@ -395,7 +395,7 @@ Console.ReadKey();
 //access string characters using indexing
 string sampleString = "Hello, World!";
 char firstChar = sampleString[0];
-Console.WriteLine("First character: " + firstChar); 
+Console.WriteLine("First character: " + firstChar);
 Console.WriteLine("Second character: " + sampleString[1]);
 Console.ReadKey();
 //methods
@@ -424,10 +424,10 @@ int myAge = 21;
 int votingAge = 18;
 Console.WriteLine(myAge >= votingAge);
 //if statement else statement
-if (myAge >= votingAge) 
+if (myAge >= votingAge)
 {
-  Console.WriteLine("Old enough to vote!");
-} 
+	Console.WriteLine("Old enough to vote!");
+}
 Console.ReadKey();
 //syntax of if statement
 /*if (condition) 
@@ -435,13 +435,13 @@ Console.ReadKey();
   // block of code to be executed if the condition is True
 }
 */
-if (myAge >= votingAge) 
+if (myAge >= votingAge)
 {
-  Console.WriteLine("Old enough to vote!");
-} 
-else 
+	Console.WriteLine("Old enough to vote!");
+}
+else
 {
-  Console.WriteLine("Not old enough to vote.");
+	Console.WriteLine("Not old enough to vote.");
 }
 //if else statement syntax
 /*if (condition) 
@@ -454,17 +454,17 @@ else
 }
 */
 Console.ReadKey();
-if(myAge >= votingAge) 
+if (myAge >= votingAge)
 {
-  Console.WriteLine("Old enough to vote!");
-} 
-else if (myAge >= 16) 
+	Console.WriteLine("Old enough to vote!");
+}
+else if (myAge >= 16)
 {
-  Console.WriteLine("Old enough to drive, but not old enough to vote.");
-} 
-else 
+	Console.WriteLine("Old enough to drive, but not old enough to vote.");
+}
+else
 {
-  Console.WriteLine("Not old enough to vote or drive.");
+	Console.WriteLine("Not old enough to vote or drive.");
 }
 Console.ReadKey();
 //if else if statement syntax
@@ -503,52 +503,52 @@ switch(expression)
 }
 */
 int dayOfWeek = 7;
-switch (dayOfWeek) 
+switch (dayOfWeek)
 {
-  case 1:
-	Console.WriteLine("Monday");		
-	break;
-  case 2:
-	Console.WriteLine("Tuesday");
-	break;
-  case 3:
-	Console.WriteLine("Wednesday");
-	break;
-  case 4:
-	Console.WriteLine("Thursday");
-	break;
-  case 5:
-	Console.WriteLine("Friday");
-	break;
-  case 6:
-	Console.WriteLine("Saturday");
-	break;
-  case 7:
-	Console.WriteLine("Sunday");
-	break;
-  default:
-	Console.WriteLine("Invalid day of the week.");
-	break;
+	case 1:
+		Console.WriteLine("Monday");
+		break;
+	case 2:
+		Console.WriteLine("Tuesday");
+		break;
+	case 3:
+		Console.WriteLine("Wednesday");
+		break;
+	case 4:
+		Console.WriteLine("Thursday");
+		break;
+	case 5:
+		Console.WriteLine("Friday");
+		break;
+	case 6:
+		Console.WriteLine("Saturday");
+		break;
+	case 7:
+		Console.WriteLine("Sunday");
+		break;
+	default:
+		Console.WriteLine("Invalid day of the week.");
+		break;
 }
 Console.ReadKey();
 //break statement-When a match is found, and the job is done, it's time for a break. There is no need for more testing.
 for (int i = 1; i <= 10; i++)
 {
-  if (i == 5) 
-  {
-	break; // Exit the loop when i is 5
-  }
-  Console.WriteLine(i);
+	if (i == 5)
+	{
+		break; // Exit the loop when i is 5
+	}
+	Console.WriteLine(i);
 }
 Console.ReadKey();
 //continue statement-When a certain condition is met, skip the current iteration and continue with the next one.
 for (int i = 1; i <= 10; i++)
 {
-  if (i == 5) 
-  {
-	continue; // Skip the rest of the loop when i is 5
-  }
-  Console.WriteLine(i);
+	if (i == 5)
+	{
+		continue; // Skip the rest of the loop when i is 5
+	}
+	Console.WriteLine(i);
 }
 Console.ReadKey();
 
@@ -556,10 +556,10 @@ Console.ReadKey();
 int count = 1;
 while (count <= 5)
 {
-  Console.WriteLine("Count: " + count);
-  count++;
+	Console.WriteLine("Count: " + count);
+	count++;
 }
-Console.ReadKey();	
+Console.ReadKey();
 //syntax of while loop
 /*while (condition) 
 {
@@ -570,8 +570,8 @@ Console.ReadKey();
 int count2 = 1;
 do
 {
-  Console.WriteLine("Count: " + count2);
-  count2++;	
+	Console.WriteLine("Count: " + count2);
+	count2++;
 } while (count2 <= 5);
 Console.ReadKey();
 //syntax of do-while loop
@@ -583,7 +583,7 @@ Console.ReadKey();
 //for loop
 for (int i = 1; i <= 5; i++)
 {
-  Console.WriteLine("Count: " + i);
+	Console.WriteLine("Count: " + i);
 }
 Console.ReadKey();
 //syntax of for loop	
@@ -591,12 +591,12 @@ Console.ReadKey();
 {
   // block of code to be executed for each iteration
 }
-*/	
+*/
 //foreach loop
 string[] students = { "pavani", "divya", "deepthi" };
 foreach (string student in students)
 {
-  Console.WriteLine(student);
+	Console.WriteLine(student);
 }
 Console.ReadKey();
 //syntax of foreach loop
@@ -632,22 +632,22 @@ Console.WriteLine("Numbers: " + string.Join(", ", numbers));
 Console.WriteLine("Fruits: " + string.Join(", ", fruits));
 Console.WriteLine("Decimals: " + string.Join(", ", decimals));
 Console.WriteLine("Cars: " + string.Join(", ", cars));
-string[] vechiles ;
+string[] vechiles;
 
 // Add values, using new
-vechiles = new string[] {"bus", "car", "plane"};
+vechiles = new string[] { "bus", "car", "plane" };
 //// Add values without using new (this will cause an error)
 //cars = {"Volvo", "BMW", "Ford"};
 Console.ReadKey();
 //loop through an array
-string[] colors = { "red", "green", "blue" };	
+string[] colors = { "red", "green", "blue" };
 for (int i = 0; i < colors.Length; i++)
 {
-  Console.WriteLine(colors[i]);
+	Console.WriteLine(colors[i]);
 }
 foreach (string color in colors)
 {
-  Console.WriteLine(color);
+	Console.WriteLine(color);
 }
 Console.ReadKey();
 //sorting an array
@@ -656,6 +656,13 @@ Array.Sort(unsortedNumbers);
 Console.WriteLine("Sorted Numbers: " + string.Join(", ", unsortedNumbers));
 foreach (int number in unsortedNumbers)
 {
-  Console.WriteLine(number);
+	Console.WriteLine(number);
 }
 Console.ReadKey();
+//System.Linq Namespace-such as Min, Max, and Sum
+int[] myNumbers = { 5, 1, 8, 9 };
+Console.WriteLine(myNumbers.Max());  // returns the largest value
+Console.WriteLine(myNumbers.Min());  // returns the smallest value
+Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
+Console.ReadKey();
+
