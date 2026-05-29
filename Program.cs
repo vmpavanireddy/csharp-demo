@@ -639,3 +639,23 @@ vechiles = new string[] {"bus", "car", "plane"};
 //// Add values without using new (this will cause an error)
 //cars = {"Volvo", "BMW", "Ford"};
 Console.ReadKey();
+//loop through an array
+string[] colors = { "red", "green", "blue" };	
+for (int i = 0; i < colors.Length; i++)
+{
+  Console.WriteLine(colors[i]);
+}
+foreach (string color in colors)
+{
+  Console.WriteLine(color);
+}
+Console.ReadKey();
+//sorting an array
+int[] unsortedNumbers = { 5, 2, 8, 1, 4 };
+Array.Sort(unsortedNumbers);
+Console.WriteLine("Sorted Numbers: " + string.Join(", ", unsortedNumbers));
+foreach (int number in unsortedNumbers)
+{
+  Console.WriteLine(number);
+}
+Console.ReadKey();
