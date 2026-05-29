@@ -552,3 +552,31 @@ for (int i = 1; i <= 10; i++)
 }
 Console.ReadKey();
 
+//while loop
+int count = 1;
+while (count <= 5)
+{
+  Console.WriteLine("Count: " + count);
+  count++;
+}
+Console.ReadKey();	
+//syntax of while loop
+/*while (condition) 
+{
+  // block of code to be executed as long as the condition is true
+}
+*/
+//do-while loop
+int count2 = 1;
+do
+{
+  Console.WriteLine("Count: " + count2);
+  count2++;	
+} while (count2 <= 5);
+Console.ReadKey();
+//syntax of do-while loop
+/*do 
+{
+  // block of code to be executed at least once and then repeatedly as long as the condition is true
+} while (condition);
+*/
