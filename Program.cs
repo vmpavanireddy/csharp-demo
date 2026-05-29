@@ -666,3 +666,40 @@ Console.WriteLine(myNumbers.Min());  // returns the smallest value
 Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
 Console.ReadKey();
 
+//Multidimensional Arrays
+//A multidimensional array is an array of arrays. It can have more than one dimension,
+//such as a 2D array (array of arrays) or a 3D array (array of arrays of arrays).
+//2D array example
+int[,] matrix = {
+	{1, 2, 3},
+	{4, 5, 6},
+	{7, 8, 9}
+};
+Console.WriteLine("Element at row 1, column 2: " + matrix[0, 1]); // Output: 2
+//3D array example
+int[,,] cube = {
+	{{1, 2}, {3, 4}},
+	{{5, 6}, {7, 8}}
+};
+Console.WriteLine("Element at layer 1, row 2, column 1: " + cube[0, 1, 0]); // Output: 3
+Console.ReadKey();
+//The single comma [,] specifies that the array is two-dimensional. A three-dimensional array would have two commas: int[,,].
+//Change Elements
+matrix[1, 1] = 10; // Change the element at row 2, column 2 to 10
+Console.WriteLine("Updated element at row 2, column 2: " + matrix[1, 1]); // Output: 10
+Console.ReadKey();
+//Loop Through a Multidimensional Array
+foreach (int element in matrix)
+{
+	Console.WriteLine(element);
+}
+//getlength of a specific dimension-GetLength(0) for rows, GetLength(1) for columns
+for (int i = 0; i < matrix.GetLength(0); i++)
+{	
+	for (int j = 0; j < matrix.GetLength(1); j++)
+	{
+		Console.Write(matrix[i, j] + " ");
+	}
+	Console.WriteLine();
+}
+Console.ReadKey();
