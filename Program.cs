@@ -605,3 +605,37 @@ Console.ReadKey();
   // block of code to be executed for each element in the array/collection
 }
 */
+//arrays in C#
+string[] names = { "pavani", "divya", "deepthi" };
+Console.WriteLine("First name: " + names[0]);
+//change value of an array element
+names[1] = "jyothi";
+Console.WriteLine("Second name: " + names[1]);
+//array length
+Console.WriteLine("Number of names: " + names.Length);
+Console.ReadKey();
+//Ways to Create an Array
+//1. Using array initializer
+int[] numbers = { 1, 2, 3, 4, 5 };
+//2. Using the new keyword	
+string[] fruits = new string[3] { "apple", "banana", "cherry" };
+//3. Using the new keyword with implicit size
+double[] decimals = new double[] { 1.1, 2.2, 3.3 };
+// Create an array of four elements, and add values later
+string[] cars = new string[4];
+cars[0] = "Volvo";
+cars[1] = "BMW";
+cars[2] = "Ford";
+cars[3] = "Mazda";
+//strings.join() method is used to concatenate the elements of an array into a single string, with a specified separator between each element.
+Console.WriteLine("Numbers: " + string.Join(", ", numbers));
+Console.WriteLine("Fruits: " + string.Join(", ", fruits));
+Console.WriteLine("Decimals: " + string.Join(", ", decimals));
+Console.WriteLine("Cars: " + string.Join(", ", cars));
+string[] vechiles ;
+
+// Add values, using new
+vechiles = new string[] {"bus", "car", "plane"};
+//// Add values without using new (this will cause an error)
+//cars = {"Volvo", "BMW", "Ford"};
+Console.ReadKey();
