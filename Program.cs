@@ -580,3 +580,28 @@ Console.ReadKey();
   // block of code to be executed at least once and then repeatedly as long as the condition is true
 } while (condition);
 */
+//for loop
+for (int i = 1; i <= 5; i++)
+{
+  Console.WriteLine("Count: " + i);
+}
+Console.ReadKey();
+//syntax of for loop	
+/*for (initialization; condition; increment/decrement) 
+{
+  // block of code to be executed for each iteration
+}
+*/	
+//foreach loop
+string[] students = { "pavani", "divya", "deepthi" };
+foreach (string student in students)
+{
+  Console.WriteLine(student);
+}
+Console.ReadKey();
+//syntax of foreach loop
+/*foreach (type variableName in array/collection) 
+{
+  // block of code to be executed for each element in the array/collection
+}
+*/
