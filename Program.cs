@@ -384,10 +384,33 @@ Console.ReadKey();
 //concatenation of strings
 string fName = "pavani";
 string lName = "reddy";
-string fullName = string.Concat("VM ",fName, " ", lName); 
-Console.WriteLine("Full Name: " + fullName); 
+string full_Name = string.Concat("VM ",fName, " ", lName); 
+Console.WriteLine("Full Name: " + full_Name); 
 Console.ReadKey();
 //interpolation of strings
 string fullNameInterpolated = $"VM {fName} {lName}";
 Console.WriteLine("Full Name (Interpolated): " + fullNameInterpolated);
+Console.ReadKey();
+
+//access string characters using indexing
+string sampleString = "Hello, World!";
+char firstChar = sampleString[0];
+Console.WriteLine("First character: " + firstChar); 
+Console.WriteLine("Second character: " + sampleString[1]);
+Console.ReadKey();
+//methods
+//IndexOf() - returns the index position of a specific character in a string, by using the IndexOf() method:
+//Substring() - returns a substring from a string based on specified starting index and length
+int index = sampleString.IndexOf('W');
+Console.WriteLine("Index of 'W': " + index);
+Console.ReadKey();
+//special characters in strings
+//Escape sequences are used to represent special characters in strings. Some common escape sequences include:
+//\n - new line
+//\t - tab
+//\\ - backslash
+//\" - double quote
+//\' - single quote
+string specialString = "Hello,\nWorld!\tThis is a string with special characters:\n- New Line\n- Tab\n- Backslash: \\\n- Double Quote: \"\n- Single Quote: \'";
+Console.WriteLine(specialString);
 Console.ReadKey();
