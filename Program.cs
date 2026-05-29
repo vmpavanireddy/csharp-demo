@@ -486,3 +486,69 @@ else
 string result = (myAge >= votingAge) ? "Old enough to vote!" : "Not old enough to vote.";
 Console.WriteLine(result);
 Console.ReadKey();
+
+//switch statement
+/*
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+    break;
+}
+*/
+int dayOfWeek = 7;
+switch (dayOfWeek) 
+{
+  case 1:
+	Console.WriteLine("Monday");		
+	break;
+  case 2:
+	Console.WriteLine("Tuesday");
+	break;
+  case 3:
+	Console.WriteLine("Wednesday");
+	break;
+  case 4:
+	Console.WriteLine("Thursday");
+	break;
+  case 5:
+	Console.WriteLine("Friday");
+	break;
+  case 6:
+	Console.WriteLine("Saturday");
+	break;
+  case 7:
+	Console.WriteLine("Sunday");
+	break;
+  default:
+	Console.WriteLine("Invalid day of the week.");
+	break;
+}
+Console.ReadKey();
+//break statement-When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+for (int i = 1; i <= 10; i++)
+{
+  if (i == 5) 
+  {
+	break; // Exit the loop when i is 5
+  }
+  Console.WriteLine(i);
+}
+Console.ReadKey();
+//continue statement-When a certain condition is met, skip the current iteration and continue with the next one.
+for (int i = 1; i <= 10; i++)
+{
+  if (i == 5) 
+  {
+	continue; // Skip the rest of the loop when i is 5
+  }
+  Console.WriteLine(i);
+}
+Console.ReadKey();
+
