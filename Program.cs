@@ -676,7 +676,7 @@ int[,] matrix = {
 	{7, 8, 9}
 };
 Console.WriteLine("Element at row 1, column 2: " + matrix[0, 1]); // Output: 2
-//3D array example
+																  //3D array example
 int[,,] cube = {
 	{{1, 2}, {3, 4}},
 	{{5, 6}, {7, 8}}
@@ -695,7 +695,7 @@ foreach (int element in matrix)
 }
 //getlength of a specific dimension-GetLength(0) for rows, GetLength(1) for columns
 for (int i = 0; i < matrix.GetLength(0); i++)
-{	
+{
 	for (int j = 0; j < matrix.GetLength(1); j++)
 	{
 		Console.Write(matrix[i, j] + " ");
@@ -703,3 +703,55 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 	Console.WriteLine();
 }
 Console.ReadKey();
+class Program_1
+{
+	//methods in C#
+	//method without parameters
+	static void MyMethod()
+	{
+		Console.WriteLine("I just got executed!");
+	}
+	//method with parameters
+	static void MyMethod_name(string fname, int age)
+	{
+		Console.WriteLine(fname + " welcome to C# programming! You are " + age + " years old.");
+	}
+	//metod with default parameters
+	static void MyMethod_default(string fname = "Guest", int age = 0)
+	{
+		Console.WriteLine(fname + " welcome to C# programming! You are " + age + " years old.");
+	}
+	//method with return type	
+	static int MyMethod_return(int a, int b)
+	{
+		return a + b;
+	}
+	//named arguments
+	//When calling a method, you can specify the parameter names along with their corresponding values.
+	//send arguments with the key: value syntax, and the order of the arguments does not matter.
+	static void MyMethod_namedArgs(string child1, string child2, string child3)
+	{
+		Console.WriteLine("The youngest child is: " + child3);
+	}
+	static void Main(string[] args)
+	{
+		MyMethod();
+		MyMethod_name("pavani", 21);
+		MyMethod_default();
+		MyMethod_default("pavani", 21);
+		Console.WriteLine(MyMethod_return(5, 3));
+		int result = MyMethod_return(5, 10);
+		Console.WriteLine("The sum of 5 and 10 is: " + result);
+		MyMethod_namedArgs(child1: "pavani", child2: "divya", child3: "deepthi");
+
+		Console.ReadKey();
+		//C# Methods
+		//Methods are blocks of code that perform a specific task and can be called from other parts of the program. They help to organize code, improve readability, and promote code reusability.
+		//Method Syntax
+		/*returnType MethodName(parameters)
+        {
+          // block of code to be executed
+        }
+        */
+	}
+}
