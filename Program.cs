@@ -733,6 +733,21 @@ class Program_1
 	{
 		Console.WriteLine("The youngest child is: " + child3);
 	}
+	//method overloading
+	//Method overloading is a feature in C# that allows you to create multiple methods with the same name but different parameters (different type, number, or order of parameters). The correct method to call is determined by the number and type of arguments passed when the method is called.
+	static void MyMethod_overload()
+	{
+		Console.WriteLine("Method with no parameters");
+	}
+	static void MyMethod_overload(string name)
+	{
+		Console.WriteLine("Method with one parameter: " + name);
+	}
+	static void MyMethod_overload(string name, int age)
+	{
+		Console.WriteLine("Method with two parameters: " + name + ", " + age);
+	}
+	//main method
 	static void Main(string[] args)
 	{
 		MyMethod();
@@ -743,7 +758,9 @@ class Program_1
 		int result = MyMethod_return(5, 10);
 		Console.WriteLine("The sum of 5 and 10 is: " + result);
 		MyMethod_namedArgs(child1: "pavani", child2: "divya", child3: "deepthi");
-
+		MyMethod_overload();
+		MyMethod_overload("pavani");
+		MyMethod_overload("pavani", 21);
 		Console.ReadKey();
 		//C# Methods
 		//Methods are blocks of code that perform a specific task and can be called from other parts of the program. They help to organize code, improve readability, and promote code reusability.
