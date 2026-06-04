@@ -16,7 +16,10 @@ class Car
   static void Main(string[] args)
   {
     //Create an Object
-    Car myObj = new Car();
-    Console.WriteLine(myObj.color);
+    Car myObj1 = new Car();
+    Console.WriteLine(myObj1.color);
+    //multiple objects
+    Car myObj2 = new Car();
+    Console.WriteLine(myObj2.color);
   }
 }
