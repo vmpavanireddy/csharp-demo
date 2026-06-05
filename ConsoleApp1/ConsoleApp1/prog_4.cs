@@ -35,4 +35,17 @@ namespace HelloWorld
             myDog.bark(); // calling the bark method from the derived class
         }
   }
+  //If you don't want other classes to inherit from a class, use the sealed keyword:
+  /*sealed class Vehicle 
+{
+  ...
+}
+
+class Car : Vehicle 
+{
+  ...
+}
+This will give an error because the Vehicle class is sealed and cannot be inherited from:
+'Car': cannot derive from sealed type 'Vehicle'
+*/
 }
