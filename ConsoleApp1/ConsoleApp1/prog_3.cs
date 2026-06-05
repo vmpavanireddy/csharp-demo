@@ -29,8 +29,19 @@ namespace HelloWorld
         //note that the access modifier must be specified before the data type of the property
         //note that the access modifier must be specified before the name of the property
         //note that the property must be public to be accessible from outside the class
+
+        private string name; // field
+
+        public string Name // property
+        {
+            get { return name; } // get accessor
+            set { name = value; } // set accessor
+        }  // property
     static void Main(string[] args)
         {
+            Program myObj = new Program();
+            myObj.Name = "John"; // set the value of the property
+            Console.WriteLine(myObj.Name); // get the value of the property
         }
     }
 }
