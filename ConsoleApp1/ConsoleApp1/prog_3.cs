@@ -37,11 +37,21 @@ namespace HelloWorld
             get { return name; } // get accessor
             set { name = value; } // set accessor
         }  // property
+        //Automatic Properties (Short Hand)
+        //C# also provides a shorter syntax for properties, called auto-implemented properties, which allows you to create a property without having to define a field and the get and set accessors. The compiler will automatically create a private, anonymous field that can only be accessed through the property's get and set accessors.
+        //Syntax of an auto-implemented property:
+        //access-modifier data-type property-name { get; set; }
+        //example of an auto-implemented property:
+        //public string Name { get; set; }
+        private string name2; // field
+        public string Name2 { get; set; } // auto-implemented property
     static void Main(string[] args)
         {
             Program myObj = new Program();
-            myObj.Name = "John"; // set the value of the property
+            myObj.Name = "pavani"; // set the value of the property
             Console.WriteLine(myObj.Name); // get the value of the property
+            myObj.Name2 = "divya"; // set the value of the auto-implemented property
+            Console.WriteLine(myObj.Name2); // get the value of the auto-implemented property
         }
     }
 }
