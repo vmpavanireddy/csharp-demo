@@ -9,6 +9,7 @@ namespace MyApplication
     //field
     //syntax: access-modifier data-type variable-name = value;
     public string color = "green";
+    public string food;
     //method
     //syntax: access-modifier return-type method-name(parameters)
     //method body
@@ -29,7 +30,17 @@ namespace MyApplication
     static void Main(string[] args)
     {
       Fav myObj = new Fav();
+      //accessing class attributes
+      //accessing field
+      //syntax: object-name.field-name
       Console.WriteLine(myObj.color);
+      //leave the fields blank, and modify them when creating the object:
+      myObj.food = "pizza";
+      Console.WriteLine(myObj.food);
+      //object method
+      //syntax: object-name.method-name()
+      //note that the method must be public to be accessible from outside the class
+      //name of the method followed by two parentheses () and a semicolon ; to call (execute) the method
       myObj.MyMethod();
     }
   }
